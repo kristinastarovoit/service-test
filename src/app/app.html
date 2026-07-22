@@ -1,4 +1,6 @@
-<app-component-a [counterInput]="currentCount"></app-component-a>
+<app-component-a (halloWeltEvent)="loggerFct($event)" [counterInput]="currentCount"></app-component-a>
+
+<p>{{myText}}</p>
 <button (click)="currentCount = 5">change count</button>
 <!-- <app-component-b></app-component-b> -->
 <!-- schreibweise signals mit (), da sie wie eine funktion agieren -->

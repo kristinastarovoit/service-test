@@ -24,4 +24,10 @@ export class App {
   }
 
   currentCount = 10;
+  myText = "";
+
+  loggerFct(value:string) {
+    console.log('event emitted');
+    this.myText = value;
+  }
 }
