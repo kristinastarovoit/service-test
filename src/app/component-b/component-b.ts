@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CountService } from '../count_service';
+import { UserService } from '../service/user-service';
 
 @Component({
   selector: 'app-component-b',
@@ -10,4 +11,5 @@ import { CountService } from '../count_service';
 })
 export class ComponentB {
   counterService = inject(CountService);
+  userService = inject(UserService);
 }
