@@ -6,6 +6,7 @@ import { CountService } from '../count_service';
   imports: [],
   templateUrl: './component-a.html',
   styleUrl: './component-a.scss',
+  providers: [CountService]
 })
 export class ComponentA {
   counterService = inject(CountService);
