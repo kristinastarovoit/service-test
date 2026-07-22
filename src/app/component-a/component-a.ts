@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { CountService } from '../count_service';
 
 @Component({
@@ -10,5 +10,5 @@ import { CountService } from '../count_service';
 })
 export class ComponentA {
   counterService = inject(CountService);
-
+  counterInput = input(0)
 }

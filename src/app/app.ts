@@ -17,12 +17,11 @@ export class App {
 
   // mit signal wird daraus eine funktion
   count = signal(0)
-
   countmultiplier = signal(5)
-
   computedCount = computed(() => this.count() * this.countmultiplier())
-
   signalUpdate() {
     this.count.update(number => number + 1)
   }
+
+  currentCount = 10;
 }

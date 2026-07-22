@@ -1,9 +1,10 @@
-<app-component-a></app-component-a>
+<app-component-a [counterInput]="currentCount"></app-component-a>
+<button (click)="currentCount = 5">change count</button>
 <!-- <app-component-b></app-component-b> -->
 <!-- schreibweise signals mit (), da sie wie eine funktion agieren -->
-<h1>Count(): {{count()}}</h1>
-<h2>MultiplizierterCount: {{computedCount()}}</h2>
+<h2>Count(): {{count()}}</h2>
 <h2>countmultiplier: {{countmultiplier()}}</h2>
+<h2>MultiplizierterCount: {{computedCount()}}</h2>
 
 <button (click)="count.set(5)">setterSignal</button>
 <button (click)="countmultiplier.set(10)">setterMutliplier</button>
